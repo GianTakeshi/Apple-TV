@@ -5,21 +5,6 @@ function main(config) {
     "https://ip.net.coffee/"
   ];
 
-  // === TUN 路由收缩配置（只接管 Fake-IP 与 Telegram 网段，让国内所有银行App彻底免检） ===
-  config.tun ??= {};
-  config.tun.enable = true;
-  config.tun["inet4-route-address"] = [
-    "198.18.0.0/16",       // 核心：所有标准走域名解析的海外应用（Google、Apple AI、YouTube等）
-    "91.108.4.0/22",       // Telegram DC
-    "91.108.8.0/22",       // Telegram DC
-    "91.108.12.0/22",      // Telegram DC
-    "91.108.16.0/22",      // Telegram DC
-    "91.108.20.0/22",      // Telegram DC
-    "91.108.56.0/22",      // Telegram DC
-    "149.154.160.0/20",    // Telegram 核心机房段 (含 160/22, 164/22, 168/22, 172/22)
-    "185.76.151.0/24"      // Telegram 备用机房段
-  ];
-
   // === 自动筛选四个地区节点（支持 US01、US-01、US 01 等命名格式） ===
   const allNodes = [...new Set(
     (config.proxies ?? [])
