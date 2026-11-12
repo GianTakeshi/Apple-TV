@@ -74,6 +74,10 @@ function main(config) {
     "DOMAIN-SUFFIX,probe.icloud.com,Siri AI",
     "DOMAIN-SUFFIX,metrics.icloud.com,Siri AI",
     "DOMAIN-SUFFIX,wps.apple.com,Siri AI"
+    "DOMAIN-SUFFIX,apple-intelligence.apple.com,Siri AI",
+    "DOMAIN-SUFFIX,issuer.apple.com,Siri AI",
+    "DOMAIN-SUFFIX,ropes.apple.com,Siri AI",
+    "DOMAIN-SUFFIX,gateway-oblivious.apple.com,Siri AI"
   ];
 
   // === 自定义域名自动加入代理 ===
