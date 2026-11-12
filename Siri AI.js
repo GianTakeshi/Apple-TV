@@ -84,7 +84,7 @@ function main(config) {
         .split("/")[0]
         .split(":")[0];
 
-      return host ?  : null;
+      return host ? ("DOMAIN-SUFFIX," + host + ",Siri AI") : null;
     })
     .filter(Boolean);
 
