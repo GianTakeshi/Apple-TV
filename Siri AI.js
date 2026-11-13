@@ -3,7 +3,6 @@ function main(config) {
   const customProxyUrls = [
     "https://clash.md/",
     "https://ip.net.coffee/",
-    "www.cloudflare.com"
   ];
 
   // === 自动筛选四个地区节点（支持 US01、US-01、US 01 等命名格式） ===
